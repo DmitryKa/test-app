@@ -1,0 +1,45 @@
+# Exclude the build directory
+build/*
+  
+# Exclude temp nibs and swap files
+*~.nib
+*.swp
+  
+# Exclude OS X folder attributes
+.DS_Store
+  
+# Exclude user-specific XCode 3 and 4 files
+*/build/*
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+Libraries/DTRichTextEditor/Core/Externals/DTCoreText/DTCoreText.xcodeproj/*
+Libraries/DTRichTextEditor/Core/Externals/DTLoupeView/DTLoupe.xcodeproj/*
+Libraries/DTRichTextEditor/Core/Externals/DTWebArchive/DTWebArchive.xcodeproj/*
+Libraries/DTRichTextEditor/DTRichTextEditor.xcodeproj/*
+*.xcf
+Pods/
+iphone1.xcworkspace/xcuserdata/*
+Crashlytics.framework/Versions/A/Crashlytics
+Crashlytics.framework/Versions/A/Resources/Info.plist
+Crashlytics.framework/run
+Crashlytics.framework/submit
+iphone1.xcworkspace/xcuserdata/gregcrabtree.xcuser*
+iphone1.xcworkspace/xcuserdata/gregcrabtree.xcuserdatad/UserInterfaceState.xcuserstate
+iphone1.xcworkspace/xcuserdata/gregcrabtree.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+iphone1.xcworkspace/xcshareddata/iphone1.xccheckout
+
