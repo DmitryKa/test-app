@@ -10,14 +10,14 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textView: UITextView! // связанный элемент со storyboard в код
     @IBOutlet weak var textField: UITextField!
     
-    @IBAction func buttonAction(sender: AnyObject) {
+    @IBAction func buttonAction(sender: AnyObject) { // экшн для кнопки, установлен через storyboard
         textView.text = textField.text
     }
 
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool { // метод вызывается когда мы нажимаем return на клавве
         buttonAction(textField)
         return false
     }
