@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textField: UITextField!
@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         textView.text = textField.text
     }
 
-
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        buttonAction(textField)
+        return false
+    }
 }
 
